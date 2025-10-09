@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { useState } from "react";
 import { View, Text, TextInput, Button, Alert } from "react-native";
 
@@ -7,6 +8,13 @@ export default function Index() {
 
   const handleSubmit = () => {
     Alert.alert("Invoer", `Gebruiker: ${name}\nWachtwoord: ${password}`);
+=======
+import { Text, View, Button , TextInputBase} from "react-native";
+
+export default function Index() {
+  const handlePress = () => {
+    alert("Je drukte op de knop!");
+>>>>>>> Stashed changes
   };
 
   return (
@@ -18,6 +26,7 @@ export default function Index() {
         padding: 20,
       }}
     >
+<<<<<<< Updated upstream
       {/* <Text>Gebruiker</Text> */}
       {/* <Text id="user" style="height: 40px;">Gebruiker</Text> */} dit mag
 
@@ -54,6 +63,13 @@ export default function Index() {
       />
 
       <Button title="Verstuur" onPress={handleSubmit} />
+=======
+      <Text style={{ marginBottom: 10 }}>
+        Edit app/index.tsx to edit this screen.
+      </Text>
+
+      <Button title="Klik hier" onPress={handlePress} />
+>>>>>>> Stashed changes
     </View>
   );
 }

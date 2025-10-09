@@ -18,15 +18,15 @@ export default function Index() {
         padding: 20,
       }}
     >
-      {/* <Text>Gebruiker</Text> */}
-      {/* <Text id="user" style="height: 40px;">Gebruiker</Text> */} dit mag
+      <Text>Sign in </Text>
+      
 
       <TextInput
         style={{
           height: 40,
           borderColor: "gray",
           borderWidth: 1,
-          width: "30%",
+          width: "80%",
           marginVertical: 10,
           paddingHorizontal: 10,
           borderRadius: 5,
@@ -42,7 +42,7 @@ export default function Index() {
           height: 40,
           borderColor: "gray",
           borderWidth: 1,
-          width: "30%",
+          width: "80%",
           marginVertical: 10,
           paddingHorizontal: 10,
           borderRadius: 5,
@@ -53,7 +53,7 @@ export default function Index() {
         onChangeText={setPassword}
       />
 
-      <Button title="Verstuur" onPress={handleSubmit} />
+      <Button title="Login" onPress={handleSubmit} />
     </View>
   );
 }

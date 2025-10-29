@@ -4,10 +4,13 @@ import { View, Text, TextInput, Button, Alert } from "react-native";
 export default function Index() {
   const [name, setName] = useState(""); // Voor de gebruikersnaam
   const [password, setPassword] = useState(""); // Voor het wachtwoord
+  
 
+  // functions
   const handleSubmit = () => {
     Alert.alert("Invoer", `Gebruiker: ${name}\nWachtwoord: ${password}`);
   };
+
 
   return (
     <View
@@ -35,8 +38,8 @@ export default function Index() {
         value={name}
         onChangeText={setName}
       />
-
-      {/* <Text>Wachtwoord</Text> */}
+      
+     
       <TextInput
         style={{
           height: 40,
